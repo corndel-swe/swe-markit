@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2;
+}
+
+.editor-container {
+  display: flex;
+  gap: 10px;
+}
+
+.editor,
+.preview {
+  width: 50%;
+  min-height: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+}
+
+.preview {
+  background: #f9f9f9;
+}
