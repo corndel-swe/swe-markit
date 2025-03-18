@@ -2,16 +2,15 @@ name: Run Vitest on Push & PR
 
 on:
   push:
-    branches:
-      - main
-      - solution
+    branches: [ '*' ]
+
   pull_request:
     branches:
       - main
-      - solution
 
 jobs:
   test:
+    name: Run Tests
     runs-on: ubuntu-latest
 
     steps:
