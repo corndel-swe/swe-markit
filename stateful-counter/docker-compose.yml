@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  counter-red:
+    image: stateful-counter
+    ports:
+      - "3000:3000"
+    environment:
+      - CONTAINER_COLOUR=red
+    restart: unless-stopped
+  counter-blue:
+    image: stateful-counter
+    ports:
+      - "3001:3000"
+    environment:
+      - CONTAINER_COLOUR=blue
+    restart: unless-stopped
+  counter-green:
+    image: stateful-counter
+    ports:
+      - "3002:3000"
+    environment:
+      - CONTAINER_COLOUR=green
+    restart: unless-stopped

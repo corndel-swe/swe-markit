@@ -1,5 +1,20 @@
 # Markit
 
+## Coach notes
+
+Hey there, future coach,
+
+On this branch, I’ve added :
+
+- The Docker files related to the demo, along with a bonus docker-compose file to demonstrate running multiple services see `./stateful-counter`.
+
+- The first exercise Dockerfile to build this projects image. 
+
+- For the second and third exercises, I used a Java project from the boot-camp, which can be found [Java Nozama Charlie Robin](https://github.com/corndel-swe/java-nozama-Charlie-robin).
+   - A Dockerfile and a new GitHub Actions workflow have been added to build and push the image to Docker Hub on every push to the main branch.
+
+## Intro
+
 Welcome to Markit!
 
 This app is the frontend of a note-taking application, allowing users to write
